@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact — Эхо Тейвата</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <header class="app-header">
+        <div class="header-main">
+            <h1>ЭХО ТЕЙВАТА</h1>
+            <p>Умная новостная лента умного алгоритма рекомендаций</p>
+        </div>
+        <div class="header-action">
+            <button class="btn btn-danger" onclick="resetAlgo()">💥 Взорвать пузырь</button>
+        </div>
+    </header>
+
+    <main class="app-body">
+        <section class="feed-section">
+            <div class="feed-filter">
+                <h2>Ваша персонализированная лента</h2>
+                <div class="alert-box" id="alertBox">
+                     <b>Внимание!</b> Алгоритм зафиксировал жесткий инфо-пузырь. Противоположный контент заблокирован.
+                </div>
+            </div>
+            <div id="feedBox" class="feed-box"></div>
+        </section>
+
+        <aside class="sidebar-section">
+            <div class="sticky-sidebar">
+                <h3>Нейросетевой профиль</h3>
+                <p class="subtitle">Анализ ваших интересов ИИ-рекомендациями:</p>
+                <div id="statsBox" class="stats-box"></div>
+            </div>
+        </aside>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
